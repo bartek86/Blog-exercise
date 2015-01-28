@@ -1,7 +1,7 @@
-<% if @post.errors.any? %>
+<% if object.errors.any? %>
     <h2>Errors:</h2>
     <ul>
-      <% @post.errors.full_messages.each do |msg| %>
+      <% object.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>  
     </ul>
